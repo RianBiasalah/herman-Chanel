@@ -88,7 +88,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = '©ItsMeBotz'//GANTI NAMA KAMU BEP
+fake = '©Cyraa Botz'//GANTI NAMA KAMU BEP
 ban =[]
 
 // Database
@@ -813,7 +813,7 @@ function banChat() {
                break 
         case 'owner':
         case 'creator':
-               sendKontak(from, `${owner}`, `${ownerName}`, 'Sibukk!!')
+               sendKontak(from, `${owner}`, `${ownerName}`, 'Creator')
                await sleep(1000)
                txtt =`*Hai Kak* ${pushname}\nItu Ownerku, Mau tau soal apa ya?`
 
@@ -851,9 +851,9 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *Baterai :* ${baterai}% 
 
 ༒ *INFO BOT* ༒
-ᱝ *Nama : *ItsMeBotz*
-ᱝ *Nomor :* @6283146208804 (pembuat)
-ᱝ *Owner : *Herman* 
+ᱝ *Nama : *ItsMeCyraa*
+ᱝ *Nomor :* @6288272045051 (Creator)
+ᱝ *Owner : *Rara* 
 ᱝ *Aiktif :*  ${runtime(process.uptime())}
 ᱝ *Prefix :* 『> ${prefix} <』
 
@@ -871,8 +871,8 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *User :* ${pushname}
 
 *Request fitur?* Ketik ${prefix}owner Ya!
-*Sewa bot?* Chat wa.me/6283146208804`
-               buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'SEMUAH FITUR😈'},type:1},{buttonId: `${prefix}vn`,buttonText:{displayText: 'MENU VN🗣️'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'SEDEKAH🤡'},type:1}]
+*Sewa bot?* Chat wa.me/6288272045051`
+               buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'AllMenu'},type:1},{buttonId: `${prefix}vn`,buttonText:{displayText: 'Menu VN'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'SEDEKAH'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
@@ -1509,7 +1509,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'sewabot':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*[ PRICE LIST ]*
-*Sewa Bot Hêrmåñ ßð†z*
+*Sewa Bot Rara Botz*
 *1 Hari :* 2K
 *1 Minggu :* 10K
 *1 Bulan :* 20K
@@ -1550,10 +1550,10 @@ break
 case 'bayar':
 gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
 teksnya = `*[ PAYMENT ]*
-*Gopay :* 083840290711
-*Dana :* 083146208804
-*Ovo :* 083146208804
-*[ Hêrmåñ ßð†z ]*`
+*Gopay :* 088272045051
+*Dana :* 088272045051
+*Pulsa :* 088272045051
+*[ Cyraa ßð†z ]*`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -1731,64 +1731,7 @@ ItsMeBotz
 case 'pricegtivd':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*Price Role GTIVD*
-*Link Grup :* https://chat.whatsapp.com/I2yoiNRMkJD8rzOFtD2onA
 
-VIP       : *40 World Locks*
-Mod     : *70 World Locks*
-Admin : *150 World Locks*
-Divine  : *200 World Locks*
-Owner  : *3 Diamond Locks*
-
-*Order Role? Chat Owner :*
-*iVend :* wa.me/6283146208804`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
-case 'pricegtli':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
-              teksnya = `Welcome, Price Role GTLI*
-*Link Grup : https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5
-
-*Not Unli Role :*
-Devil       : *50 World Locks*
-Mod     : *100 World Locks*
-
-*Unlimited Role :*
-Admin : *150 World Locks*
-Owner  : *225 World Locks*
-King  : *250 World Locks*
-God : *300 World Locks*
-Community : *375 World Locks*
-Corupted : *400 World Locks*
-Manager : *450 World Locks*
-Developer : *500 World Locks*
-Leviathan : *550 World Locks*
-Founder : *600 World Locks*
-Police : *675 World Locks*
-
-*Custom Role :*
-C Role Not Unli : *300 World Locks*
-C Role Unli : *600 World Locks*
-
-*Order Role? Bisa pake Goopay!*
-*Chat Owner :* wa.me/6283146208804`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
-case 'pricegtfo':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
-              teksnya = `*Price Role GTFO*
-*Link Grup : https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5
-
-Mod     : *80 World Locks*
-Admin : *150 World Locks*
-Divine  : *200 World Locks*
-Legend  : *3 Diamond Locks*
-Manager  : *4 Diamond Locks*
-Owner  : *7 Diamond Locks*
-
-*Order Role? Chat Owner :*
-*UFO GTFO :* wa.me/623146208804`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
 case 'ruleswave':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*_Welcome To WAVEㅤFMLY!_*
